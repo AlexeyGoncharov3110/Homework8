@@ -22,7 +22,6 @@ int TheRowWithSmallestAmount(int[,] array)
             sum = sum + array[i, j];
         }
         minSum[i] = sum;
-        Console.Write(minSum[i]);
     }
     int minIndex = 0;
     for (int k = 0; k < minSum.Length; k++)
