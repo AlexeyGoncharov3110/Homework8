@@ -7,12 +7,11 @@ if (!isParsedX || !isParsedY || !isParsedZ)
     Console.WriteLine("Ошибка!");
     return;
 }
-int[,,] array3D = new int[x, y, z];
-PrintArray3D(array3D);
-int[,,] createArray3D = CreateArray3D(array3D);
+int[,,] createArray3D = CreateArray3D(x,y,z);
 PrintArray3D(createArray3D);
-int[,,] CreateArray3D(int[,,] array)
+int[,,] CreateArray3D(int x , int y, int z)
 {
+    int [,,] array = new int [x,y,z];
     Random random = new Random();
     for (int i = 0; i < array.GetLength(0); i++)
     {
